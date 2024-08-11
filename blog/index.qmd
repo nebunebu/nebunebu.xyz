@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "nebu blog"
 listing:
   contents: posts
   sort: "date desc"
