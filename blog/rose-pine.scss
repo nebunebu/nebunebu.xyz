@@ -1,0 +1,277 @@
+/*-- scss:defaults --*/
+
+$theme: "rose-pine" !default;
+
+//
+// Color system
+//
+
+$base: #191724 !default;
+$surface: #1f1d2e !default;
+$overlay: #26233a !default;
+$muted: #6e6a86 !default;
+$subtle: #908caa !default;
+$text: #e0def4 !default;
+$love: #eb6f92 !default;
+$gold: #f6c177 !default;
+$rose: #ebbcba !default;
+$pine: #31748f !default;
+$foam: #9ccfd8 !default;
+$iris: #c4a7e7 !default;
+
+$highlight-high: #524f67 !default;
+$highlight-medium: #403d52 !default;
+$highlight-high: #21202e !default;
+
+// Body
+
+$body-bg: $base !default;
+$body-color: $text !default;
+
+@function body-mix($weight) {
+  @return mix($body-bg, $body-color, $weight);
+}
+
+$primary: $overlay !default;
+$secondary: $foam !default;
+$success: $pine !default;
+$info: $love !default;
+$warning: $gold !default;
+$danger: $love !default;
+$light: $muted !default;
+$dark: $overlay !default;
+
+/* $min-contrast-ratio: 1.9 !default; */
+
+// Links
+
+$link-color: $foam !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:
+  "Lato",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol" !default;
+$h1-font-size: 3rem !default;
+$h2-font-size: 2.5rem !default;
+$h3-font-size: 2rem !default;
+$text-muted: $muted !default;
+
+// Tables
+
+$table-border-color: $foam !default;
+
+$table-bg-scale: 0% !default;
+
+// Forms
+
+$input-bg: $surface !default;
+$input-color: $text !default;
+$input-border-color: $foam !default;
+$input-group-addon-color: $highlight-high !default;
+$input-group-addon-bg: $foam !default;
+$input-placeholder-color: $muted !default;
+
+$form-check-input-bg: $gray-500 !default;
+$form-check-input-border: none !default;
+
+$form-select-disabled-color: $muted !default;
+
+$form-file-button-color: $input-group-addon-color !default;
+$form-file-button-bg: $input-group-addon-bg !default;
+$form-file-button-hover-bg: darken($form-file-button-bg, 5%) !default;
+
+// Dropdowns
+
+$dropdown-bg: $gray-500 !default;
+$dropdown-border-color: $foam !default;
+$dropdown-divider-bg: $foam !default;
+$dropdown-link-color: $text !default;
+$dropdown-link-hover-color: $text !default;
+$dropdown-link-hover-bg: $rose !default;
+
+// Navs
+
+$nav-link-padding-x: 2rem !default;
+$nav-link-disabled-color: $muted !default;
+$nav-tabs-border-color: $gold !default;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color
+  transparent !default;
+$nav-tabs-link-active-color: $text !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color
+  $nav-tabs-border-color transparent !default;
+
+// Navbar
+
+/* $navbar-padding-y: 1rem !default; */
+/* $navbar-dark-color: rgba($text, 0.6) !default; */
+/* $navbar-dark-hover-color: $text !default; */
+/* $navbar-light-color: rgba($text, 0.7) !default; */
+/* $navbar-light-hover-color: $gray-600 !default; */
+/* $navbar-light-active-color: $gray-600 !default; */
+/* $navbar-light-toggler-border-color: rgba($gray-600, 0.1) !default; */
+
+// Pagination
+
+$pagination-color: $text !default;
+$pagination-bg: $success !default;
+$pagination-border-width: 0 !default;
+$pagination-border-color: transparent !default;
+$pagination-hover-color: $text !default;
+$pagination-hover-bg: lighten($success, 10%) !default;
+$pagination-hover-border-color: transparent !default;
+$pagination-active-bg: $pagination-hover-bg !default;
+$pagination-active-border-color: transparent !default;
+$pagination-disabled-color: $text !default;
+$pagination-disabled-bg: darken($success, 15%) !default;
+$pagination-disabled-border-color: transparent !default;
+
+// Cards
+
+$card-cap-bg: $foam !default;
+$card-bg: $iris !default;
+
+// Popovers
+
+$popover-bg: $iris !default;
+$popover-header-bg: $foam !default;
+
+// Toasts
+
+$toast-background-color: $foam !default;
+$toast-header-background-color: $gray-500 !default;
+
+// Modals
+
+$modal-content-bg: $gray-500 !default;
+$modal-content-border-color: $foam !default;
+$modal-header-border-color: $foam !default;
+
+// Progress bars
+
+$progress-bg: $foam !default;
+
+// List group
+
+$list-group-color: $text !default;
+$list-group-bg: $gray-500 !default;
+$list-group-border-color: $foam !default;
+$list-group-hover-bg: $foam !default;
+$list-group-action-hover-color: $list-group-color !default;
+$list-group-action-active-bg: $body-bg !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y: 0.375rem !default;
+$breadcrumb-padding-x: 0.75rem !default;
+$breadcrumb-bg: $foam !default;
+$breadcrumb-border-radius: 0.25rem !default;
+
+// Close
+
+$btn-close-color: $text !default;
+$btn-close-opacity: 0.4 !default;
+$btn-close-hover-opacity: 1 !default;
+
+// Code
+
+$pre-color: inherit !default;
+
+/*-- scss:rules --*/
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" !default;
+
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+// Typography
+
+.blockquote {
+  &-footer {
+    color: $muted;
+  }
+}
+
+// Forms
+
+@include color-mode(dark) {
+  .input-group-text {
+    // color: $body-color;
+  }
+}
+
+.form-floating {
+  > label,
+  > .form-control:focus ~ label,
+  > .form-control:not(:placeholder-shown) ~ label {
+    color: $input-placeholder-color;
+  }
+}
+
+// Navs
+
+.nav-tabs,
+.nav-pills {
+  .nav-link,
+  .nav-link.active,
+  .nav-link.active:focus,
+  .nav-link.active:hover,
+  .nav-item.open .nav-link,
+  .nav-item.open .nav-link:focus,
+  .nav-item.open .nav-link:hover {
+    color: $text;
+  }
+}
+
+.breadcrumb a {
+  color: $text;
+}
+
+.pagination {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+// Indicators
+
+.alert {
+  color: $text;
+  border: none;
+
+  a,
+  .alert-link {
+    color: $text;
+    text-decoration: underline;
+  }
+
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      @if $enable-gradients {
+        background: $value
+          linear-gradient(180deg, mix($text, $value, 15%), $value)
+          repeat-x;
+      } @else {
+        background-color: $value;
+      }
+    }
+  }
+}
+
+.tooltip {
+  --bs-tooltip-bg: var(--bs-tertiary-bg);
+  --bs-tooltip-color: var(--bs-emphasis-color);
+}
