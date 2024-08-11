@@ -1,2 +1,7 @@
-_site/
+blog/_site/
+
+blog/.quarto/
+
+# Nix
 .direnv/
+result

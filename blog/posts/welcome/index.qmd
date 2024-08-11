@@ -1,12 +1,24 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2024-08-08"
-categories: [news]
+author: "nebu"
+date: "2024-08-011"
+categories: [fluff, test]
 ---
 
 This is the first post in a Quarto blog. Welcome!
 
-![](thumbnail.jpg)
+<!-- ![](thumbnail.jpg) -->
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+I've set it up with [Quarto](https://quarto.org/) (of course), an [AWS S3 bucket for static site hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html),
+and [GitHub Actions](https://docs.github.com/en/actions) for rendering and updating the contents of the S3 bucket.
+
+The blog is in pretty rough shape right now.
+
+Some things that need to be done are,
+
+- [ ] setting up ssl certs for https
+- [ ] style
+- [ ] write some posts
+- [ ] set up plugins/integrations for commenting
+- [ ] set up plugins/integrations for rss
+- [ ] link some social media
