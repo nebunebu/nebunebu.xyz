@@ -25,7 +25,16 @@
         {
           default = pkgs.mkShell {
             name = "devShell";
-            packages = builtins.attrValues { inherit (pkgs) quarto; };
+            packages = builtins.attrValues {
+              inherit (pkgs)
+                quarto
+                prettierd
+                stylelint
+                # stylelint-lsp
+                ;
+
+              # vimPlugins.quarto-nvim
+            };
           };
         }
       );
