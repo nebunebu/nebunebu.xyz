@@ -18,7 +18,9 @@ jobs:
       uses: quarto-dev/quarto-actions/setup@v2
 
     - name: Render Quarto Project
-      run: quarto render
+      run: |
+        cd blog
+        quarto render
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v2
@@ -28,4 +30,6 @@ jobs:
         aws-region: us-east-1  # replace with your AWS region
 
     - name: Sync to S3
-      run: aws s3 sync _site s3://nebunebu.xyz --delete
+      run: |
+        cd blog
+        aws s3 sync _site s3://nebunebu.xyz --delete
