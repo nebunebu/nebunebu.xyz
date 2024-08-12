@@ -1,57 +1,69 @@
 /*-- scss:defaults --*/
 
+// Rose Pine 5.3.3
+// Bootswatch
+
 $theme: "rose-pine" !default;
 
 //
 // Color system
 //
 
-$base: #191724 !default;
-$surface: #1f1d2e !default;
-$overlay: #26233a !default;
-$muted: #6e6a86 !default;
-$subtle: #908caa !default;
-$text: #e0def4 !default;
-$love: #eb6f92 !default;
-$gold: #f6c177 !default;
-$rose: #ebbcba !default;
-$pine: #31748f !default;
-$foam: #9ccfd8 !default;
-$iris: #c4a7e7 !default;
+// stylelint-disable
+$white: #e0def4 !default; // Text
+$gray-100: #f2e9e1 !default; // Dawn-Overlay
+$gray-200: #9893a5 !default; // Dawn-Muted
+$gray-300: #908caa !default; // Subtle
+$gray-400: #6e6a86 !default; // Muted
+$gray-500: #524f67 !default; // Highlight High
+$gray-600: #403d52 !default; // Highlight Med
+$gray-700: #26233a !default; // Overlay
+$gray-800: #21202e !default; // Highlight Low
+$gray-900: #1f1d2e !default; // Surface
+$black: #191724 !default; // Base
 
-$highlight-high: #524f67 !default;
-$highlight-medium: #403d52 !default;
-$highlight-high: #21202e !default;
+$blue: #3e8fb0 !default; // Pine-Moon
+$indigo: #907aa9 !default; // Dawn-Iris
+$purple: #c4a7e7 !default; // Iris
+$pink: #ebbcba !default; // Rose
+$red: #eb6f92 !default; // Love
+$orange: #ea9d34 !default; // Dawn-Gold
+$yellow: #f6c177 !default; // Gold
+$green: #31748f !default; // Pine
+$teal: #286983 !default; // Dawn-Pine
+$cyan: #9ccfd8 !default; // Foam
+
+$primary: $gray-700 !default;
+$secondary: $cyan !default;
+$success: $teal !default;
+$info: $purple !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-300 !default;
+$dark: $gray-800 !default;
+
+$min-contrast-ratio: 2.5 !default;
 
 // Body
 
-$body-bg: $base !default;
-$body-color: $text !default;
-
-@function body-mix($weight) {
-  @return mix($body-bg, $body-color, $weight);
-}
-
-$primary: $overlay !default;
-$secondary: $foam !default;
-$success: $pine !default;
-$info: $love !default;
-$warning: $gold !default;
-$danger: $love !default;
-$light: $muted !default;
-$dark: $overlay !default;
-
-/* $min-contrast-ratio: 1.9 !default; */
+$body-bg: $black !default;
+$body-color: $white !default;
 
 // Links
 
-$link-color: $foam !default;
+$link-color: $secondary !default;
+$link-hover-color: $link-color !default;
+
+// Components
+
+$component-active-color: rgba(255, 255, 255, 0.75) !default;
+$component-active-bg: $gray-800 !default;
 
 // Fonts
 
-// stylelint-disable-next-line value-keyword-case
 $font-family-sans-serif:
-  "Lato",
+  "Nokora",
+  "Source Sans Pro",
   -apple-system,
   BlinkMacSystemFont,
   "Segoe UI",
@@ -62,126 +74,133 @@ $font-family-sans-serif:
   "Apple Color Emoji",
   "Segoe UI Emoji",
   "Segoe UI Symbol" !default;
-$h1-font-size: 3rem !default;
-$h2-font-size: 2.5rem !default;
-$h3-font-size: 2rem !default;
-$text-muted: $muted !default;
 
 // Tables
 
-$table-border-color: $foam !default;
+$table-color: initial !default;
+$table-accent-bg: rgba($white, 0.05) !default;
+$table-hover-bg: rgba($white, 0.075) !default;
+$table-border-color: $component-active-bg !default;
+$table-dark-bg: $gray-500 !default;
+$table-dark-border-color: darken($gray-500, 3%) !default;
+$table-dark-color: $body-bg !default;
 
 $table-bg-scale: 0% !default;
 
 // Forms
 
-$input-bg: $surface !default;
-$input-color: $text !default;
-$input-border-color: $foam !default;
-$input-group-addon-color: $highlight-high !default;
-$input-group-addon-bg: $foam !default;
-$input-placeholder-color: $muted !default;
+$input-bg: $gray-500 !default;
+$input-disabled-color: $gray-100 !default;
+$input-disabled-bg: $gray-600 !default;
 
-$form-check-input-bg: $gray-500 !default;
-$form-check-input-border: none !default;
+$input-color: $gray-800 !default;
+$input-border-color: rgba($black, 0.15) !default;
+$input-placeholder-color: $gray-200 !default;
+$input-group-addon-color: $gray-600 !default;
+$input-group-addon-bg: $gray-800 !default;
 
-$form-select-disabled-color: $muted !default;
+$form-select-disabled-color: $gray-700 !default;
+$form-select-disabled-bg: $input-disabled-bg !default;
 
-$form-file-button-color: $input-group-addon-color !default;
-$form-file-button-bg: $input-group-addon-bg !default;
-$form-file-button-hover-bg: darken($form-file-button-bg, 5%) !default;
+$form-check-input-bg: rgba(255, 255, 255, 0.75) !default;
+$form-check-input-border: 1px solid $white !default;
+$form-check-input-checked-bg-color: $primary !default;
+
+$form-switch-color: rgba(255, 255, 255, 0.75) !default;
+$form-switch-focus-color: $form-switch-color !default;
+
+$form-range-track-bg: $gray-800 !default;
+$form-range-thumb-bg: $primary !default;
+
+$form-file-button-color: $gray-600 !default;
 
 // Dropdowns
 
-$dropdown-bg: $gray-500 !default;
-$dropdown-border-color: $foam !default;
-$dropdown-divider-bg: $foam !default;
-$dropdown-link-color: $text !default;
-$dropdown-link-hover-color: $text !default;
-$dropdown-link-hover-bg: $rose !default;
+$dropdown-bg: $gray-800 !default;
+$dropdown-divider-bg: $body-bg !default;
+$dropdown-link-color: $body-color !default;
+$dropdown-link-hover-color: rgba(255, 255, 255, 0.75) !default;
+$dropdown-link-hover-bg: $body-bg !default;
 
 // Navs
 
-$nav-link-padding-x: 2rem !default;
-$nav-link-disabled-color: $muted !default;
-$nav-tabs-border-color: $gold !default;
-$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color
-  transparent !default;
-$nav-tabs-link-active-color: $text !default;
-$nav-tabs-link-active-border-color: $nav-tabs-border-color
-  $nav-tabs-border-color transparent !default;
+$nav-tabs-border-color: $gray-800 !default;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color !default;
+$nav-tabs-link-active-color: $component-active-color !default;
+$nav-tabs-link-active-bg: $body-bg !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color !default;
 
-// Navbar
+$nav-underline-link-active-color: rgba(255, 255, 255, 0.75) !default;
 
-/* $navbar-padding-y: 1rem !default; */
-/* $navbar-dark-color: rgba($text, 0.6) !default; */
-/* $navbar-dark-hover-color: $text !default; */
-/* $navbar-light-color: rgba($text, 0.7) !default; */
-/* $navbar-light-hover-color: $gray-600 !default; */
-/* $navbar-light-active-color: $gray-600 !default; */
-/* $navbar-light-toggler-border-color: rgba($gray-600, 0.1) !default; */
+// Navbars
 
 // Pagination
 
-$pagination-color: $text !default;
-$pagination-bg: $success !default;
-$pagination-border-width: 0 !default;
-$pagination-border-color: transparent !default;
-$pagination-hover-color: $text !default;
-$pagination-hover-bg: lighten($success, 10%) !default;
-$pagination-hover-border-color: transparent !default;
-$pagination-active-bg: $pagination-hover-bg !default;
-$pagination-active-border-color: transparent !default;
-$pagination-disabled-color: $text !default;
-$pagination-disabled-bg: darken($success, 15%) !default;
-$pagination-disabled-border-color: transparent !default;
+$pagination-bg: transparent !default;
+$pagination-border-color: $gray-800 !default;
+$pagination-hover-bg: $gray-800 !default;
+$pagination-hover-border-color: $gray-800 !default;
+$pagination-active-color: rgba(255, 255, 255, 0.75) !default;
+$pagination-active-bg: $gray-800 !default;
+$pagination-active-border-color: $gray-800 !default;
+$pagination-disabled-color: $gray-800 !default;
+$pagination-disabled-bg: transparent !default;
+$pagination-disabled-border-color: $gray-800 !default;
 
 // Cards
 
-$card-cap-bg: $foam !default;
-$card-bg: $iris !default;
+$card-border-color: rgba($gray-900, 0.95) !default;
+$card-cap-bg: rgba($gray-800, 0.25) !default;
+$card-bg: rgba($gray-200, 0.125) !default;
 
 // Popovers
 
-$popover-bg: $iris !default;
-$popover-header-bg: $foam !default;
+$popover-bg: $gray-800 !default;
+$popover-border-color: $body-bg !default;
+$popover-header-bg: $gray-800 !default;
 
 // Toasts
 
-$toast-background-color: $foam !default;
-$toast-header-background-color: $gray-500 !default;
+$toast-background-color: lighten($body-bg, 5%) !default;
+$toast-border-color: rgba(0, 0, 0, 0.2) !default;
+$toast-header-color: $body-color !default;
+$toast-header-background-color: $toast-background-color !default;
+$toast-header-border-color: $toast-border-color !default;
 
 // Modals
 
-$modal-content-bg: $gray-500 !default;
-$modal-content-border-color: $foam !default;
-$modal-header-border-color: $foam !default;
+$modal-content-bg: $gray-800 !default;
+$modal-content-border-color: $body-bg !default;
+$modal-header-border-color: $body-bg !default;
 
 // Progress bars
 
-$progress-bg: $foam !default;
+$progress-bg: $gray-800 !default;
+$progress-bar-color: $primary !default;
 
 // List group
 
-$list-group-color: $text !default;
-$list-group-bg: $gray-500 !default;
-$list-group-border-color: $foam !default;
-$list-group-hover-bg: $foam !default;
-$list-group-action-hover-color: $list-group-color !default;
-$list-group-action-active-bg: $body-bg !default;
+$list-group-color: $white !default;
+$list-group-bg: transparent !default;
+$list-group-border-color: $gray-800 !default;
+$list-group-hover-bg: $gray-800 !default;
+$list-group-active-color: $white !default;
+$list-group-disabled-color: $gray-600 !default;
+$list-group-disabled-bg: transparent !default;
+$list-group-action-color: $body-color !default;
+$list-group-action-hover-color: $white !default;
 
 // Breadcrumbs
 
 $breadcrumb-padding-y: 0.375rem !default;
 $breadcrumb-padding-x: 0.75rem !default;
-$breadcrumb-bg: $foam !default;
+$breadcrumb-bg: $component-active-bg !default;
+$breadcrumb-active-color: $gray-500 !default;
 $breadcrumb-border-radius: 0.25rem !default;
 
 // Close
 
-$btn-close-color: $text !default;
-$btn-close-opacity: 0.4 !default;
-$btn-close-hover-opacity: 1 !default;
+$btn-close-color: $white !default;
 
 // Code
 
@@ -189,89 +208,4 @@ $pre-color: inherit !default;
 
 /*-- scss:rules --*/
 
-// Variables
-
-$web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" !default;
-
-@if $web-font-path {
-  @import url($web-font-path);
-}
-
-// Typography
-
-.blockquote {
-  &-footer {
-    color: $muted;
-  }
-}
-
-// Forms
-
-@include color-mode(dark) {
-  .input-group-text {
-    // color: $body-color;
-  }
-}
-
-.form-floating {
-  > label,
-  > .form-control:focus ~ label,
-  > .form-control:not(:placeholder-shown) ~ label {
-    color: $input-placeholder-color;
-  }
-}
-
-// Navs
-
-.nav-tabs,
-.nav-pills {
-  .nav-link,
-  .nav-link.active,
-  .nav-link.active:focus,
-  .nav-link.active:hover,
-  .nav-item.open .nav-link,
-  .nav-item.open .nav-link:focus,
-  .nav-item.open .nav-link:hover {
-    color: $text;
-  }
-}
-
-.breadcrumb a {
-  color: $text;
-}
-
-.pagination {
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-// Indicators
-
-.alert {
-  color: $text;
-  border: none;
-
-  a,
-  .alert-link {
-    color: $text;
-    text-decoration: underline;
-  }
-
-  @each $color, $value in $theme-colors {
-    &-#{$color} {
-      @if $enable-gradients {
-        background: $value
-          linear-gradient(180deg, mix($text, $value, 15%), $value)
-          repeat-x;
-      } @else {
-        background-color: $value;
-      }
-    }
-  }
-}
-
-.tooltip {
-  --bs-tooltip-bg: var(--bs-tertiary-bg);
-  --bs-tooltip-color: var(--bs-emphasis-color);
-}
+// Add any custom SCSS rules here if needed
