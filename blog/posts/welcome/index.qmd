@@ -1,9 +1,12 @@
 ---
 title: "Welcome To My Blog"
 author: "nebu"
-date: "2024-08-011"
+date: "8/11/2024"
+last-modified: "9/01/2024"
 categories: [fluff, test]
 ---
+
+*last-modified: "9/01/2024"*
 
 This is the first post in a Quarto blog. Welcome!
 
@@ -16,8 +19,8 @@ The blog is in pretty rough shape right now.
 
 Some things that need to be done are,
 
-- [ ] setting up ssl certs for https
-- [ ] style
+- [x] setting up ssl certs for https
+- [x] style
 - [ ] write some posts
 - [ ] set up plugins/integrations for commenting
 - [ ] set up plugins/integrations for rss
