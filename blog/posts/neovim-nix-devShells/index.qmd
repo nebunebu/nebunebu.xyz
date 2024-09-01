@@ -1,0 +1,27 @@
+---
+title: "nix "
+author: "Harlow Malloc"
+date: "2024-08-11"
+categories: [nix, neovim, code]
+image: "image.jpg"
+draft: true
+---
+
+<!-- Nix users can create virtual environments with the [pkgs.mkShell](https://nixos.org/manual/nixpkgs/stable/#sec-pkgs-mkShell) -->
+<!-- function. On flake based systems, this virtual environment is declared in a -->
+<!-- `flake.nix` file and activated with the command `nix develop`. While the virtual -->
+<!-- environment is activated, the packages declared in `packages` attribute of the -->
+<!-- set passed to `pkgs.MkShell` are available to the user. -->
+
+The nix-shell allows user to decalare reproducible development enviornments with the
+[pkgs.mkShell](https://nixos.org/manual/nixpkgs/stable/#sec-pkgs-mkShell) function.
+With flakes, this function which takes an attribute-set, can be added to a `flake.nix` file
+and actived with the command `nix develop`.
+
+
+
+---
+
+[https://wiki.nixos.org/wiki/Development_environment_with_nix-shell]
+[https://nixos.org/manual/nixpkgs/stable/#sec-pkgs-mkShell]
+[https://nix.dev/tutorials/first-steps/declarative-shell.html]
