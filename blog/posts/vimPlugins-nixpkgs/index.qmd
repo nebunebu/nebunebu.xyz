@@ -7,7 +7,7 @@ image: "image.jpg"
 draft: true
 ---
 
-I have manually edited `vim-plugin-names`. 
+I have manually edited `vim-plugin-names`.
 
 Running the `update.py` script from a nix-shell with `python3` installed give the error,
 

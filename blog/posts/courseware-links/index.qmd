@@ -1,0 +1,49 @@
+---
+title: "Educational Resources"
+author: "nebu"
+date: "09/01/2024"
+categories: [links, edu]
+draft: true
+---
+
+# Education Resources
+
+## Aggregated Courseware
+
+- [Class Central](https://www.classcentral.com/)
+- [College Compendium](https://collegecompendium.org/)
+- [MIT OpenCourseWare](https://ocw.mit.edu/)
+- [Developer-Y/cs-video-courses](https://github.com/Developer-Y/cs-video-courses)
+- [Oregon Programming Languages Summer School](https://www.cs.uoregon.edu/research/summerschool/archives.html)
+- [Complexity Explorer](https://www.complexityexplorer.org/courses)
+
+## Courses I'm interested in doing
+
+- [Ocaml Programming: Correct + Efficient + Beautiful](https://cs3110.github.io/textbook/cover.html)
+(https://www.youtube.com/playlist?list=PLm3J0oaFux3aafQm568blS9blxtA_EWQv)
+- [Undergrad Complexity Theory at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5vLXpzOyJiLtqLp6dCW2)
+- [Great Ideas in Theoretical Computer Science at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3aafQm568blS9blxtA_EWQv)
+- [CS251 Spring 2022 Great Ideas in Theoretical CS](https://www.youtube.com/playlist?list=PLKzLTB8HeSUIuln-o1mbXfTr8HmIhiGEg)
+- [cs251](https://www.cs251.com/)
+- [Graduate Complexity Theory at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3b8Gg1DdaJOzYNsaXYLAOKH)
+- [Communications Networks (Fall 2020)](https://courses.physics.illinois.edu/cs438/fa2020/)
+
+- [Logic for Systems](https://csci1710.github.io/book/chapters/welcome.html)
+- [CS 240: Introduction to Computer Systems](https://courses.physics.illinois.edu/cs240/fa2020/)
+- [CS 5846: Decision Theory](https://www.cs.cornell.edu/courses/cs5846/2021sp/5846-21-zoom.html)
+- [CMU Formal Languages, Automata, and Computability](http://www.contrib.andrew.cmu.edu/~okahn/flac-s15/schedule.html)
+- [Discrete Mathematics with Applications](https://www.toomey.org/tutor/text_books/Digital_Logic/Discrete%20Mathematics%20with%20Applications%20-%20Susanna%20S.%20Epp%20(2019).pdf)
+
+## Youtube Playlist
+
+## Books
+
+[CS631 Advanced Programming in the UNIX Environment](https://www.youtube.com/playlist?list=PL0qfF8MrJ-jxMfirAdxDs9zIiBg2Wug0z)
+
+https://www.classes.cs.uchicago.edu/archive/2023/fall/22300-1/schedule/
+https://v2.scrimba.com/learn-typescript-c03c?ref=classcentral
+https://www.classcentral.com/classroom/youtube-formal-languages-and-automata-for-reward-function-specification-and-efficient-reinforcement-learning-134439
+
+https://www.structy.net/
+https://react-formula.com/
+https://www.nand2tetris.org/
